@@ -7,7 +7,7 @@ CREATE TABLE todo (
     title varchar(255) NOT NULL,
     description text NOT NULL,
     created_at datetime NOT NULL DEFAULT NOW(),
-    due_date datetime NOT NULL,
+    due_time datetime NOT NULL,
     status varchar(255) NOT NULL,
     user_id bigint unsigned NOT NULL,
     CONSTRAINT t_id PRIMARY KEY (id),
