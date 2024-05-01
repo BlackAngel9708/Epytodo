@@ -19,7 +19,7 @@ Maintenant, le serveur devrait être en cours d'exécution à l'adresse http://l
 
 ## Utilisation
 
-Vous pouvez utiliser curl pour effectuer vos requêtes ou utiliser la collection postman du dépôt qui contient toutes les requêtes possibles[^1^][1].
+Vous pouvez utiliser curl pour effectuer vos requêtes ou utiliser la collection postman du dépôt qui contient toutes les requêtes possibles.
 
 ## Contribution
 
