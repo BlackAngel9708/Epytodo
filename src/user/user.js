@@ -26,7 +26,7 @@ module.exports = function(app, bcrypt) {
         var pwd = req.body["password"];
 
         if (id === undefined || mail === undefined || mname === undefined || fname === undefined || pwd === undefined) {
-            res.status(500).json({"msg": "Server Error"});
+            res.status(500).json({"msg": "Internal server error"});
             return;
         }
         pwd = bcrypt.hashSync(pwd, 10);

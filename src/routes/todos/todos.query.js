@@ -23,7 +23,7 @@ exports.create_todo = function(res, title, description, duetime, id, status) {
 
 exports.delete_task_by_id = function(res, id) {
     db.execute('DELETE FROM todos WHERE id = ?', [id], function(err, result, fields) {
-        res.status(200).json({"msg": "Task deleted"});
+        res.status(200).json({"msg": "Successfully deleted record number : ${ id }"});
     });
 }
 

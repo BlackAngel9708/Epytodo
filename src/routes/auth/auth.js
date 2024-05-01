@@ -5,12 +5,12 @@ module.exports = function(app, bcrypt) {
         var mail = req.body["mail"];
 
         if (mail === undefined || req.body["password"] === undefined) {
-            res.status(500).json({"msg": "Server Error"});
+            res.status(500).json({"msg": "Internal server error"});
             return;
         }
         get_mail_account(res, mail, req.body["password"], bcrypt, function(nbr) {
             if (nbr == 84) {
-                res.status(401).json({"msg": "Invalid mail or password"});
+                res.status(401).json({"msg": "Invalid Credentials"});
             }
             return;
         });
@@ -22,13 +22,13 @@ module.exports = function(app, bcrypt) {
         var pwd = req.body["password"];
 
         if (mail === undefined || mname === undefined || fname === undefined || pwd === undefined) {
-            res.status(500).json({"msg": "Server Error"});
+            res.status(500).json({"msg": "Internal server error"});
             return;
         }
         pwd = bcrypt.hashSync(pwd, 10);
         check_account_mail(res, mail, function (nbr) {
             if (nbr == 84) {
-                res.status(409).json({"msg": "Mail already used"});
+                res.status(409).json({"msg": " Account already exists"});
                 return;
             } else {
                 register(res, mail, pwd, mname, fname);

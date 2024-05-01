@@ -19,7 +19,7 @@ module.exports = function(app, bcrypt) {
         var status = req.body["status"];
 
         if (title === undefined || description === undefined || due_time === undefined || my_id === undefined || status === undefined) {
-            res.status(500).json({"msg": "Server Error"});
+            res.status(500).json({"msg": "Internal server error"});
             return;
         }
         create_todo(res, title, description, due_time, my_id, status);
@@ -38,7 +38,7 @@ module.exports = function(app, bcrypt) {
         var status = req.body["status"];
 
         if (id === undefined || title === undefined || desc === undefined || due_time === undefined || user_id === undefined, status === undefined) {
-            res.status(500).json({"msg": "Server Error"});
+            res.status(500).json({"msg": "Internal server error"});
             return;
         }
         update_task_by_id(res, id, title, desc, due_time, user_id, status);

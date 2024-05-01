@@ -11,6 +11,6 @@ modulde.export = (req, res, next) => {
             }
         });
     } else {
-        res.status(500).json({"msg": "Server Error"});
+        res.status(500).json({"msg": "Internal server error"});
     }
 }

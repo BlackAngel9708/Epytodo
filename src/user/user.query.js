@@ -72,7 +72,7 @@ exports.get_info_id_or_mail = function (res, data) {
 
 exports.delete_user_by_id = function(res, id) {
     db.execute('DELETE FROM users WHERE id = ?', [id], function(err, result, fields) {
-        res.status(200).json({"msg": `User deleted. Record numer : ${id}`});
+        res.status(200).json({"msg": "Successfully deleted record number : ${ id }"});
     });
 }
 
