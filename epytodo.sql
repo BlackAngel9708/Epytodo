@@ -20,5 +20,5 @@ CREATE TABLE user (
     name varchar(255) NOT NULL,
     firstname varchar(255) NOT NULL,
     created_at datetime NOT NULL DEFAULT NOW(),
-    CONSTRAINT id PRIMARY KEY (id),
+    CONSTRAINT id PRIMARY KEY (id)
 );
