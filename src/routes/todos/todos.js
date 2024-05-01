@@ -37,7 +37,7 @@ module.exports = function(app, bcrypt) {
         var user_id = req.body["user_id"];
         var status = req.body["status"];
 
-        if (id === undefined || title === undefined || desc === undefined || due_time === undefined || user_id === undefined, status === undefined) {
+        if (id === undefined || title === undefined || desc === undefined || due_time === undefined || user_id === undefined || status === undefined) {
             res.status(500).json({"msg": "Internal server error"});
             return;
         }
