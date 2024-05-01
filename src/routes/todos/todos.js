@@ -1,6 +1,6 @@
 const {create_todo, all_todo, todo_id, delete_task_by_id, update_task_by_id} = require('./todos.query');
-const auth = require('../middleware/auth');
-const verif_id = require('../middleware/notFound');
+const auth = require('../../middleware/auth');
+const verif_id = require('../../middleware/notFound');
 
 module.exports = function(app, bcrypt) {
     app.get('/todo', auth, (req, res) => {
