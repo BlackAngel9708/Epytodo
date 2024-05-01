@@ -1,4 +1,4 @@
-modulde.export = (req, res, next) => {
+module.exports = (req, res, next) => {
     var id = req.params.id;
     var db = require('../config/db');
 
