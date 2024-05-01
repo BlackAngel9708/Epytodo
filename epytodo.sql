@@ -10,7 +10,7 @@ CREATE TABLE todo (
     due_time datetime NOT NULL,
     status varchar(255) NOT NULL,
     user_id bigint unsigned NOT NULL,
-    CONSTRAINT t_id PRIMARY KEY (id),
+    CONSTRAINT t_id PRIMARY KEY (id)
 );
 
 CREATE TABLE user (
