@@ -10,7 +10,7 @@ EpyTodo est un projet d'Epitech. L'objectif de ce projet est de créer une liste
 
 Pour installer et exécuter ce projet, suivez les étapes ci-dessous :
 
-1. Clonez le dépôt : `git clone https://github.com/JimmyRamsamynaick/Epitodo.git`
+1. Clonez le dépôt : `git clone https://github.com/JimmyRamsamynaick/Epytodo.git`
 2. Accédez au répertoire du projet : `cd EpyTodo`
 3. Installez les dépendances : `npm install`
 4. Démarrez le serveur : `npm start`
